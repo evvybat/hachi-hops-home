@@ -1,0 +1,8 @@
+Hachi Hops Home!
+
+Online: open the GitHub Pages link (the game runs right in the browser).
+
+Offline: do NOT just double-click index.html (browsers show a blank page).
+Windows: double-click 'PLAY HERE (Windows).bat' (needs Python installed).
+Any system: open a terminal in this folder, run  python -m http.server 8000
+and visit http://localhost:8000

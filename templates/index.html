@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <!-- Fredoka: a round, bubbly font. If it can't load (offline), the page and
+       game fall back to the other rounded fonts listed in the CSS / style.js. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main>
+    <h1>{{ title }}</h1>
+    <canvas id="game" width="960" height="540" tabindex="0"
+            aria-label="Game screen"></canvas>
+    <p class="controls">
+      Move: <kbd>←</kbd><kbd>→</kbd> / <kbd>A</kbd><kbd>D</kbd> ·
+      Jump: <kbd>↑</kbd> / <kbd>W</kbd> ·
+      Pause: <kbd>P</kbd> ·
+      Confirm: <kbd>Enter</kbd> / <kbd>Space</kbd> ·
+      Restart: <kbd>R</kbd> ·
+      Main menu (when paused): <kbd>Esc</kbd> ·
+      Sound: <kbd>M</kbd>
+    </p>
+  </main>
+  <script type="module" src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

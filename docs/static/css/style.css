@@ -1,0 +1,77 @@
+/* Kawaii page styling: soft pink, rounded, brown outlines like Hachi's art. */
+:root {
+  --brown: #8d5e50;
+  --pink: #ff8fbf;
+  --pink-deep: #e8508a;
+  --cream: #fff4ec;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #7a4a45;
+  font-family: "Fredoka", "Baloo 2", "Nunito", "Trebuchet MS", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.9) 0 3px, transparent 4px),
+    radial-gradient(circle at 78% 30%, rgba(255, 255, 255, 0.8) 0 2px, transparent 3px),
+    radial-gradient(circle at 40% 82%, rgba(255, 255, 255, 0.8) 0 3px, transparent 4px),
+    linear-gradient(180deg, #ffd6e8 0%, #ffe9f3 55%, #fff4f8 100%);
+  background-size: 160px 160px, 220px 220px, 190px 190px, auto;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin: 4px 0 14px;
+  color: var(--pink-deep);
+  letter-spacing: 0.5px;
+  /* white sticker outline around the title */
+  text-shadow:
+    2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1.5px 1.5px #fff, -1.5px 1.5px #fff, 1.5px -1.5px #fff, -1.5px -1.5px #fff,
+    3px 4px 0 rgba(190, 120, 150, 0.35);
+}
+
+h1::before, h1::after { content: " \2665 "; color: var(--pink); }
+
+canvas {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  background: var(--cream);
+  border: 4px solid var(--brown);
+  border-radius: 22px;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 8px var(--pink), 0 10px 24px rgba(190, 110, 150, 0.35);
+  outline: none;
+}
+
+.controls {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 8px 16px;
+  font-size: 0.92rem;
+  background: #fffaf6;
+  border: 2.5px solid var(--brown);
+  border-radius: 999px;
+  box-shadow: 3px 4px 0 rgba(190, 120, 150, 0.3);
+}
+
+kbd {
+  display: inline-block;
+  min-width: 1.2em;
+  padding: 1px 7px;
+  margin: 0 1px;
+  font: inherit;
+  font-weight: 700;
+  color: #7a4a45;
+  background: #ffe3ee;
+  border: 2px solid var(--brown);
+  border-radius: 8px;
+  box-shadow: 0 2px 0 var(--brown);
+}
