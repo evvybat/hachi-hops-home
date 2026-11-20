@@ -31,7 +31,7 @@ A browser-based platform game based on the manga *Nana*. You play Hachi
 ## How to Play
 
 Visit
-https://evvybat.github.io/hachi-hops-home/ 
+https://evvybatz.github.io/hachi-hops-home/
 
 ## Controls
 
