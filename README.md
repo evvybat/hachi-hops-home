@@ -28,22 +28,10 @@ A browser-based platform game based on the manga *Nana*. You play Hachi
 > `static/images/nana/` (see the README.txt in each folder).
 > See the design doc "Nana Game (HMWK 6)".
 
-## Install
+## How to Play
 
-1. Install Python 3.11+ from https://www.python.org
-2. From this folder:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run
-
-```bash
-python app.py
-```
-
-Open http://127.0.0.1:5000 in your browser.
+Visit
+https://evvybat.github.io/hachi-hops-home/ 
 
 ## Controls
 
