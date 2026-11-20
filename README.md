@@ -45,18 +45,6 @@ python app.py
 
 Open http://127.0.0.1:5000 in your browser.
 
-## Publish on GitHub Pages
-
-GitHub Pages only hosts plain files, so make a static copy of the game first:
-
-```bash
-python export_static.py
-```
-
-This fills the `docs/` folder. Upload the contents of `docs/` to a GitHub
-repository, then turn on Settings > Pages > Deploy from a branch > `main`, folder `/ (root)`
-(or keep `docs/` as a folder and pick `/docs`). Run the script again after any change to the game.
-
 ## Controls
 
 | Key | Action |
@@ -122,14 +110,6 @@ platform-game/
     ├── story.py           The visual-novel dialogue shown between levels
     └── level.py           The 4 levels as data
 ```
-
-## What Python does
-
-Python owns the game's *rules and data*: level layouts, physics numbers,
-the allowed state transitions, and the player/hearts model. Flask hands these
-to the browser, and `game.js` runs the real-time loop and draws it.
-
 ## AI tools used
 
 - Claude Code (architecture scaffold)
-- Cursor (feature development): document significant AI contributions here.
